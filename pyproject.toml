@@ -7,8 +7,8 @@ requires = ["setuptools>=48", "wheel >= 0.29.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "modern_python_template"
-description = "modern python template"
+name = "connectivity"
+description = "SEEG connectivity"
 version = "0.1.0-dev0"
 authors = [
     {name = "Larry Eisenman", email = "leisenman@wustl.edu"}
@@ -23,7 +23,7 @@ classifiers = [
 ]
 requires-python = ">=3.8"
 dependencies = [
-    "scipy",
+    "mne_connectivity"
     "matplotlib",
 ]
 
@@ -34,10 +34,10 @@ test = [
 ]
 
 [project.urls]
-homepage = "https://github.com/lneisenman/modern_python_template"
+homepage = "https://github.com/lneisenman/connectivity"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
-addopts = "-rsxXf --cov-report term-missing --cov=modern_python_template"
+addopts = "-rsxXf --cov-report term-missing --cov=connectivity"
 norecursedirs = [".cache", ".git", ".tox", "build", "*.egg-info"]
 testpaths = ["tests"]
