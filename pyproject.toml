@@ -21,9 +21,9 @@ classifiers = [
     "Operating System :: OS Independent",
     "Development Status :: 2 - Pre-Alpha"
 ]
-requires-python = ">=3.8"
+requires-python = ">=3.11"
 dependencies = [
-    "mne_connectivity"
+    "mne_connectivity",
     "matplotlib",
 ]
 
